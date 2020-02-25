@@ -10,7 +10,7 @@ int main (void)
 	configure_usart_wifi();
 	configure_wifi_command_pin();
 
-	while (1) {
+	while (true) {
 		delay_ms(500);
 		usart_write_line(WIFI_USART, "Hello\r\n");
 	}
